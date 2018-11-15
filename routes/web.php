@@ -17,11 +17,11 @@ Route::get('/', function () {
 
 
 
-Route::get('login','LoginController@getLogin');
-Route::post('login','LoginController@postLogin');
+Route::get('/login','LoginController@getLogin');
+Route::post('/login','LoginController@postLogin');
 Route::get('','HomeController@getIndex');
 
-Route::get('index',[
+Route::get('/index',[
 	'as'=>'trang-chu',
 	'uses'=>'PageController@getIndex'
 ]);
