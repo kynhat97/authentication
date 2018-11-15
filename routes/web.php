@@ -11,15 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/','LoginController@getLogin');
 
 
 
 Route::get('/login','LoginController@getLogin');
 Route::post('/login','LoginController@postLogin');
-Route::get('','HomeController@getIndex');
+
 
 Route::get('/index',[
 	'as'=>'trang-chu',
