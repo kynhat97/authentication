@@ -46,7 +46,7 @@ class LoginController extends Controller
             if( Auth::attempt(['name' =>$name, 'password' =>$password])) 
             {
                 
-                return redirect()->intended('/Tabledata');
+                return redirect()->intended('tabledata');
                
             
             } else { 
