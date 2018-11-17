@@ -72,26 +72,6 @@ class PageController extends Controller
 	        $user->save();
         	return redirect()->intended('CreateAccount');
 
-
-
-            /*if( Auth::attempt(['name' =>$name, 'password' =>$password,'account_type'=>$account_type==1])) 
-            {
-                
-              return redirect()->intended('index');
-         
-               
-            
-            } else { 
-                return redirect()->intended('welcome');
-            }*/
-
-
-       
-    
-          
-         
-
-        
         	
 
 }
