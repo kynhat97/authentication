@@ -27,6 +27,13 @@
 							<p style="color:red">{{$errors->first('name')}}</p>
 						@endif
 					</div>
+					<div class="form-group">
+						<label for="">Password</label>
+						<input type="password" class="form-control" id="password" placeholder="Password" name="password">
+						@if($errors->has('password'))
+							<p style="color:red">{{$errors->first('password')}}</p>
+						@endif
+					</div>
 				
 						
 					{!! csrf_field() !!}
