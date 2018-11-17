@@ -27,21 +27,7 @@
 							<p style="color:red">{{$errors->first('name')}}</p>
 						@endif
 					</div>
-					<div class="form-group">
-						<label for="">Password</label>
-						<input type="password" class="form-control" id="password" placeholder="Password" name="password">
-						@if($errors->has('password'))
-							<p style="color:red">{{$errors->first('password')}}</p>
-						@endif
-					</div>
-				<div class="form-group">
-						<label for="">account_type</label>
-						<input type="text" class="form-control" id="account_type" placeholder="account_type" name="account_type" value="{{old('account_type')}}">
-						@if($errors->has('account_type'))
-							<p style="color:red">{{$errors->first('account_type')}}</p>
-						@endif
-					</div>
-
+				
 						
 					{!! csrf_field() !!}
 					<button type="submit" class="btn btn-primary">Đăng nhập</button>
