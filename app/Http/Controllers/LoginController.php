@@ -41,9 +41,9 @@ class LoginController extends Controller
         } else {
             $name = $request->input('name');
             $password = $request->input('password');
-            $account_type=$request->input('account_type');
+            /*$account_type=$request->input('account_type');,'account_type'=>$account_type==1*/
 
-            if( Auth::attempt(['name' =>$name, 'password' =>$password,'account_type'=>$account_type==1])) 
+            if( Auth::attempt(['name' =>$name, 'password' =>$password])) 
             {
                 
               return redirect()->intended('Home');
@@ -51,7 +51,7 @@ class LoginController extends Controller
                
             
             } else { 
-                return redirect()->intended('welcome');
+                return redirect()->intended('login/Tabledata');
             }
         }
 

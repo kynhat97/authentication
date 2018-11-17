@@ -16,7 +16,10 @@ Route::get('/','LoginController@getLogin');
 
 
 Route::get('/login','LoginController@getLogin');
-Route::post('/login','LoginController@postLogin');
+Route::post('/login/CreateAccount',[
+	'uses'=>'LoginController@postLogin',
+	'as'=>'login.CreateAccount'
+]);
 
 
 Route::get('/index',[
@@ -24,11 +27,8 @@ Route::get('/index',[
 	'uses'=>'PageController@getIndex'
 ]);
 
-Route::get('tabledata','PageController@getTabledata')->name('tabledata');
 
 
-/*Route::get('login','PageController@getLogin');
-Route::post('login','PageController@postLogin');*/
 
 Route::get('CreateAccount','PageController@create_account');
 Route::post('CreateAccount','PageController@store_account');
@@ -40,20 +40,5 @@ Route::get('tabledata','PageController@getTabledata')->name('tabledata');
 Route::get('Tablebasic','PageController@getTablebasic')->name('Tablebasic');
 
 
-Route::get('All',function(){
 
-               $account_type= DB::table('account')->select('account_type')->where('account_type','=',1)->get();
-             $count = DB::table('account')->count();
-   
-    	echo "<pre>";
-	print($count);
-	echo "</pre>";     
-   
-          
- 
-	/*$data =DB::table('arduino')-> get();
-	echo "<pre>";
-	print($data);
-	echo "</pre>";*/
-	
 });
