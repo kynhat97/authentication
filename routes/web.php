@@ -16,11 +16,11 @@ Route::get('/','LoginController@getLogin');
 
 
 Route::get('/login','LoginController@getLogin');
-Route::post('/login/CreateAccount',[
-	'uses'=>'LoginController@postLogin',
-	'as'=>'login.CreateAccount'
-]);
-
+Route::post('/login','LoginController@postLogin');
+	// 'uses'=>'LoginController@postLogin',
+	// 'as'=>'login.CreateAccount',
+	// 'as'=>'login.Tablebasic',
+	// 'as'=>'login.tabledata'
 
 Route::get('/index',[
 	'as'=>'trang-chu',
@@ -38,7 +38,3 @@ Route::post('CreateAccount','PageController@store_account');
 Route::get('tabledata','PageController@getTabledata')->name('tabledata');
 
 Route::get('Tablebasic','PageController@getTablebasic')->name('Tablebasic');
-
-
-
-});
