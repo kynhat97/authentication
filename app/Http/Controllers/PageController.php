@@ -85,7 +85,7 @@ class PageController extends Controller
 		$new_electricity_water=electricity_water::select('*')->get();
 		$new_room = room::select('*')->get();
 		$new_customer = customer::select('*')->get();
-		$new_account = account::select('*')->get();
+		$new_account = User::select('*')->get();
 		$new_bill = bill::select('*')->get();
 		$new_unit = unit::select('*')->get();
 		$new_arduino = arduino::select('*')->get();

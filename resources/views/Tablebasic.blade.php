@@ -265,8 +265,8 @@
                                  
                                <tr>
                                 
-                                  <td>{{$new->username}}</td>
-                                  <td>{{$new->pass_word}}</td>
+                                  <td>{{$new->name}}</td>
+                                  <td>{{$new->password}}</td>
                                   <td>{{$new->account_type}}</td>
                                 </tr>
 
