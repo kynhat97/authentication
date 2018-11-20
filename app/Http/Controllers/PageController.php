@@ -27,7 +27,7 @@ class PageController extends Controller
 
 	public function getTabledata()
 	{
-		return view('tabledata');
+		return view('Tabledata');
 	
 	}
 
