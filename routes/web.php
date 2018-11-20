@@ -27,6 +27,12 @@ Route::get('/index',[
 	'uses'=>'PageController@getIndex'
 ]);
 
+Route::get('/create',[
+	'as'=>'trang-chu',
+	'uses'=>'PageController@getIndex'
+]);
+
+
 
 
 
@@ -38,3 +44,4 @@ Route::post('CreateAccount','PageController@store_account');
 Route::get('tabledata','PageController@getTabledata')->name('tabledata');
 
 Route::get('Tablebasic','PageController@getTablebasic')->name('Tablebasic');
+

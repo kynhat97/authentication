@@ -24,9 +24,10 @@ class PageController extends Controller
 		return view('index');
 	}
 
+
 	public function getTabledata()
 	{
-		return view('Tabledata');
+		return view('tabledata');
 	
 	}
 
