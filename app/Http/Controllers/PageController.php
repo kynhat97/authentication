@@ -84,13 +84,13 @@ class PageController extends Controller
 
 
 		$new_electricity_water=Electricity_Water::select('*')->get();
-		$new_room = room::select('*')->get();
-		$new_customer = customer::select('*')->get();
-		$new_account = User::select('*')->get();
-		$new_bill = bill::select('*')->get();
-		$new_unit = unit::select('*')->get();
-		$new_arduino = arduino::select('*')->get();
-		$new_configuration = configuration::select('*')->get();
+		$new_room = Room::select('*')->get();
+		$new_customer = Customer::select('*')->get();
+		
+		$new_bill = Bill::select('*')->get();
+		$new_unit = Unit::select('*')->get();
+		$new_arduino = Arduino::select('*')->get();
+		$new_configuration = Configuration::select('*')->get();
 
 		return view('Tablebasic',compact('new_electricity_water','new_customer','new_bill','new_room','new_account','new_unit','new_arduino','new_configuration'));
 	}
