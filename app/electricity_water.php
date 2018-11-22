@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class electricity_water extends Model
+class Electricity_Water extends Model
 {
      protected $table ="Electricity_Water";
 
