@@ -242,43 +242,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <strong class="card-title"><h1><center>Account</center><h1> </strong>
-                        </div>
-                        <div class="card-body">
-
-                            <table class="table">
-                              <thead class="thead-dark">
-                                <tr>
-                              
-                                  <th scope="col">Username</th>
-                                  <th scope="col">Password</th>
-                                  <th scope="col">quyền</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-
-
-                               @foreach ($new_account as $new)
-                                 
-                               <tr>
-                                
-                                  <td>{{$new->name}}</td>
-                                  <td>{{$new->password}}</td>
-                                  <td>{{$new->account_type}}</td>
-                                </tr>
-
-                               @endforeach()
-                                    
-                                
-                              </tbody>
-                            </table>
-
-                        </div>
-                    </div>
-                </div>
+             
 
 
                 <div class="col-lg-6 col-xl-12">
@@ -364,6 +328,52 @@
                         </div>
                     </div>
                 </div>
+
+
+     <div class="col-lg-6 col-xl-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <strong class="card-title"><h1><center>Room</center><h1></strong>
+                        </div>
+                       <div class="card-body">
+                            <table class="table">
+                              <thead class="thead-dark">
+                                <tr>
+                                
+                                  <th scope="col">room_code</th>
+                                  <th scope="col">room_name</th>
+                                  <th scope="col">room_rate</th>
+                                  <th scope="col">arduino_code</th>
+                                
+                                </tr>
+                              </thead>
+
+                              <tbody>
+
+                                @foreach ($new_room as $new)
+                                 
+                               <tr>
+                             
+                                  <td>{{$new->room_code}}</td>
+                                  <td>{{$new->room_name}}</td>
+                                  <td>{{$new->room_rate}}</td>
+                                  <td>{{$new->arduino_code}}</td>
+                                 
+                                  
+                                </tr>
+
+                               @endforeach()
+                                    
+
+                               
+                              </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+
+
 
 
 
