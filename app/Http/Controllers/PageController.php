@@ -89,10 +89,10 @@ class PageController extends Controller
 		$new_account = User::select('*')->get();
 		$new_bill = bill::select('*')->get();
 		$new_unit = unit::select('*')->get();
-		$new_arduino = arduino::select('*')->get();
+		
 		$new_configuration = configuration::select('*')->get();
 
-		return view('Tablebasic',compact('new_electricity_water','new_customer','new_bill','new_room','new_account','new_unit','new_arduino','new_configuration'));
+		return view('Tablebasic',compact('new_electricity_water','new_customer','new_bill','new_room','new_account','new_unit','new_configuration'));
 	}
 
 	
