@@ -29,7 +29,7 @@
 					</div>
 					<div class="form-group">
 						<label for="">Password</label>
-						<input type="pass_word" class="form-control" id="pass_word" placeholder="Password" name="pass_word">
+						<input type="pass_word" class="form-control" id="password" placeholder="Password" name="pass_word">
 						@if($errors->has('pass_word'))
 							<p style="color:red">{{$errors->first('pass_word')}}</p>
 						@endif
