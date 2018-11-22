@@ -20,15 +20,15 @@ class LoginController extends Controller
     }
     public function postLogin(Request $request) {
         $rules = [
-            'name' => 'required|string|max:255',
-            'password' => 'required|min:8',
+            'username' => 'required|string|max:255',
+            'pass_word' => 'required|min:8',
             
         ];
         $messages = [
-            'name.required' => 'name là trường bắt buộc',
-            'name.name' => 'name không đúng định dạng',
-            'password.required' => 'Mật khẩu là trường bắt buộc',
-            'password.min' => 'Mật khẩu phải chứa ít nhất 8 ký tự',
+            'username.required' => 'username là trường bắt buộc',
+            'username.name' => 'username không đúng định dạng',
+            'pass_word.required' => 'Mật khẩu là trường bắt buộc',
+            'pass_word.min' => 'Mật khẩu phải chứa ít nhất 8 ký tự',
             
            
            
@@ -39,11 +39,11 @@ class LoginController extends Controller
         if ($validator->fails()) {
             return redirect()->back()->withErrors($validator)->withInput();
         } else {
-            $name = $request->input('name');
-            $password = $request->input('password');
+            $username = $request->input('username');
+            $pass_word = $request->input('pass_word');
             /*$account_type=$request->input('account_type');,'account_type'=>$account_type==1*/
 
-            if( Auth::attempt(['name' =>$name, 'password' =>$password])) 
+            if( Auth::attempt(['username' =>$username, 'pass_word' =>$pass_word])) 
             {
                 
                 return redirect()->intended('tabledata');
