@@ -21,17 +21,17 @@
 						</div>
 					@endif
 					<div class="form-group">
-						<label for="">name</label>
-						<input type="text" class="form-control" id="name" placeholder="name" name="name" value="{{old('name')}}">
-						@if($errors->has('name'))
-							<p style="color:red">{{$errors->first('name')}}</p>
+						<label for="">username</label>
+						<input type="text" class="form-control" id="username" placeholder="username" name="username" value="{{old('name')}}">
+						@if($errors->has('username'))
+							<p style="color:red">{{$errors->first('username')}}</p>
 						@endif
 					</div>
 					<div class="form-group">
 						<label for="">Password</label>
-						<input type="password" class="form-control" id="password" placeholder="Password" name="password">
-						@if($errors->has('password'))
-							<p style="color:red">{{$errors->first('password')}}</p>
+						<input type="pass_word" class="form-control" id="pass_word" placeholder="Password" name="pass_word">
+						@if($errors->has('pass_word'))
+							<p style="color:red">{{$errors->first('pass_word')}}</p>
 						@endif
 					</div>
 				
