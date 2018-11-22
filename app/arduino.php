@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class arduino extends Model
+class Arduino extends Model
 {
     protected $table ="arduino";
 

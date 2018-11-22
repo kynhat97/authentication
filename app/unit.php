@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class unit extends Model
+class Unit extends Model
 {
      protected $table ="unit";
       protected $fillable= ['electricity_payment','water_payment'];
