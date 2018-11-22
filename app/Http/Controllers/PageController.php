@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\account;
-use App\electricity_water;
+use App\Electricity_Water;
 use App\customer;
 use App\bill;
 use App\unit;
@@ -83,7 +83,7 @@ class PageController extends Controller
 	{
 
 
-		$new_electricity_water=electricity_water::select('*')->get();
+		$new_electricity_water=Electricity_Water::select('*')->get();
 		$new_room = room::select('*')->get();
 		$new_customer = customer::select('*')->get();
 		$new_account = User::select('*')->get();

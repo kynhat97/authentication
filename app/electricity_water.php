@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class electricity_water extends Model
 {
-     protected $table ="electricity_water";
+     protected $table ="Electricity_Water";
 
 
    protected $fillable= ['ew_code','room_code','number_electricty','number_water','date_of_print'];
