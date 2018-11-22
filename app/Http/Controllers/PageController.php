@@ -3,15 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\account;
+
 use App\Electricity_Water;
-use App\customer;
-use App\bill;
-use App\unit;
-use App\room;
+use App\Customer;
+use App\Bill;
+use App\Unit;
+use App\Room;
 use App\User;
-use App\arduino;
-use App\configuration;
+use App\Arduino;
+use App\Configuration;
 use Validator;
 use Auth;
 use Illuminate\Support\Facades\DB;
