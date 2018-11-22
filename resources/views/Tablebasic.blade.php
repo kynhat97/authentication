@@ -326,45 +326,6 @@
 
 
 
-<div class="col-lg-6 col-xl-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <strong class="card-title"><h1><center>arduino</center><h1></strong>
-                        </div>
-                       <div class="card-body">
-                            <table class="table">
-                              <thead class="thead-dark">
-                                <tr>
-                                
-                                  <th scope="col">arduino_code</th>
-                                  <th scope="col">configuration_code</th>
-                                 
-                                </tr>
-                              </thead>
-
-                              <tbody>
-
-                                @foreach ($new_arduino as $new)
-                                 
-                               <tr>
-                             
-                                  <td>{{$new->arduino_code}}</td>
-                                  <td>{{$new->configuration_code}}</td>
-                                 
-                                  
-                                </tr>
-
-                               @endforeach()
-                                    
-
-                               
-                              </tbody>
-                            </table>
-
-                        </div>
-                    </div>
-                </div>
-
 
 
 

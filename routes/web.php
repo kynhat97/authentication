@@ -14,6 +14,8 @@
 Route::get('/','LoginController@getLogin');
 
 
+//Route::get('/test','PageController@show');
+
 
 Route::get('/login','LoginController@getLogin');
 Route::post('/login','LoginController@postLogin');
